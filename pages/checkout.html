@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- TIPOGRAFÍA -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- SPLIDE CARRUSEL -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Furniro Ecommerce | Checkout</title>
+</head>
+
+<body>
+
+    <header class="header-product-checkout">
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container">
+                <a class="navbar-brand enlace-logo" href="../index.html">
+                    <img src="../img/logo.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav listado-menu">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="../pages/product-detail.html">Shop</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a href="../pages/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex list-unstyled listado-botones">
+                        <li class="item-botones me-4"><img src="../img/user-icon.svg" alt=""></li>
+                        <li class="item-botones"> <a href="../pages/cart.html"><img src="../img/cart-icon.svg" alt="">
+                        </li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="checkout-page">
+
+        <section class="seccion-checkout">
+            <div class="banner-checkout">
+                <img src="../img/Meubel House_Logos-05.png" alt="" class="mini-logo">
+                <h1 class="titulo-checkout">Checkout</h1>
+                <p class="parrafo-checkout">Home > Checkout</p>
+            </div>
+        </section>
+
+        <section class="seccion-datos">
+
+            <div class="contenedor-form">
+                <h1 class="tituto-form">Billing details</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-form">Submit</button>
+                </form>
+            </div>
+            </div>
+            <div class="contenedor-detalle">
+
+                <div class="detalle-compra">
+                    <h5>Product</h5>
+                </div>
+                <div class="detalle-compra">
+                    <h5>Subtotal</h5>
+                </div>
+
+                <div class="detalle-compra">
+                    <p>Sofa x 3</p>
+                </div>
+                <div class="detalle-compra">
+                    <p>$250.000</p>
+                </div>
+                <div class="detalle-compra">
+                    <p>Subtotal</p>
+                </div>
+                <div class="detalle-compra">
+                    <p>$750.000</p>
+                </div>
+                <div class="detalle-compra">
+                    <p>Total</p>
+                </div>
+                <div class="detalle-compra">
+                    <p class="parrafo-total-color">$750.000</p>
+                </div>
+
+                <hr>
+                <ul>
+                    <li>Direct Bank Transfer</li>
+                    <p class="parrafo-transferencia">Make your payment directly into our bank account. Please use your
+                        Order
+                        ID as the payment reference. Your order will not be shipped until the funds have cleared in our
+                        account.</p>
+                    <li class="listado-pago">Direct Banck Transfer</li>
+                    <li class="listado-pago">Cash on delivery</li>
+                    <p>Your personal data will be used to support your experience throughout this website, to manage
+                        access
+                        to your account, and for other purposes described in our <strong>privacy policy</strong>.</p>
+                </ul>
+                <button type="submit" class="btn-enviar-pedido">Place order</button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="seccion-footer">
+        <div class="container">
+            <p class="parrafo-derechos">Copyright 2025 | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
