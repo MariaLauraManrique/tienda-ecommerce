@@ -1275,6 +1275,7 @@ header {
             .contacto {
                 list-style-type: none;
                 width: 48%;
+                margin: auto;
 
 
 
@@ -1307,7 +1308,7 @@ header {
 
         .informacion-formulario {
             width: 48%;
-
+            margin: auto;
             form {
                 .btn-submit {
                     background-color: #b98e2f;
@@ -1322,14 +1323,18 @@ header {
 .container-seccion {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 30px 0;
+    margin: 40px 0;
 
+    .contacto-final {
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
 
-    .img-contacto-final {
-        width: 15%;
+        .img-contacto-final {
+            width: 15%;
 
+        }
     }
-
-
 }
