@@ -818,37 +818,37 @@ header {
             padding: 30px;
             text-align: center;
 
-          .cart{ 
-            margin:30px;
-          }
-              
-                .cart-1 {
-                    color: #9F9F9F;
+            .cart {
+                margin: 30px;
+            }
+
+            .cart-1 {
+                color: #9F9F9F;
+            }
+
+            .cart-2 {
+
+                .cart-3 {
+                    color: #b98e2f;
+                    font-size: 22px;
                 }
-
-                .cart-2{
-                
-                    .cart-3 {
-                        color: #b98e2f;
-                        font-size: 22px;
-                    }
-                }
-        }
-
-            .check {
-                border: 1px solid #000;
-                border-radius: 5px;
-                color: #000;
-                text-decoration: none;
-                padding: 5px 10px;
-               
-                
-              
-
             }
         }
 
+        .check {
+            border: 1px solid #000;
+            border-radius: 5px;
+            color: #000;
+            text-decoration: none;
+            padding: 5px 10px;
+
+
+
+
+        }
     }
+
+}
 
 
 /* 
@@ -1317,4 +1317,19 @@ header {
             }
         }
     }
+}
+
+.container-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+
+
+    .img-contacto-final {
+        width: 15%;
+
+    }
+
+
 }
