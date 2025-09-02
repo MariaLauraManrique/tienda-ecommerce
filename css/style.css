@@ -89,6 +89,7 @@ header {
 
     .enlace-logo {
         position: absolute;
+        top: 0;
 
     }
 
@@ -799,6 +800,7 @@ header {
                 div:first-child {
                     width: 35%;
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     padding: .5rem;
                     display: flex;
@@ -1245,7 +1247,7 @@ header {
 
 
     .seccion-contact-informacion {
-        padding-top: 5rem;
+        padding: 5rem 0;
 
         .titulo-contact {
             font-size: 30px;
@@ -1309,6 +1311,7 @@ header {
         .informacion-formulario {
             width: 48%;
             margin: auto;
+
             form {
                 .btn-submit {
                     background-color: #b98e2f;
@@ -1321,20 +1324,159 @@ header {
 }
 
 .container-seccion {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 40px 0;
+    background-color: #FAF3EA;
+    padding: 2rem 0;
+
+    .contenedor-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 
     .contacto-final {
         display: flex;
-        align-items:flex-start;
+        align-items: center;
         justify-content: center;
 
         .img-contacto-final {
-            width: 15%;
+            width: 40px;
+            margin-right: 1rem;
+        }
 
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 767px) {
+    .seccion-product-detail {
+        .col-miniaturas {
+            display: flex;
+            order: 1;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            img {
+                width: 32% !important;
+            }
+        }
+    }
+
+
+    /* Página carrito */
+    .cart-page {
+        .seccion-carrito {
+            .contenedor-carrito {
+                flex-wrap: wrap;
+            }
+
+            .productos-carrito {
+                width: 100%;
+
+                .cabecera-tabla {
+                    text-align: center;
+
+                    span {
+                        width: 16%;
+                    }
+
+                    span:first-child {
+                        width: 30%;
+                    }
+
+                }
+
+                .fila-tabla {
+                    text-align: center;
+
+                    div {
+                        width: 16%;
+                    }
+
+                    div:first-child {
+                        width: 30%;
+                    }
+                }
+            }
+
+            .contenedor-totales {
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    /* Página Conctacto */
+    .contact-page {
+        .seccion-contact-informacion {
+            .informacion-formulario {
+                width: 90%;
+            }
+        }
+
+        .contacto {
+
+            width: 90% !important;
+            padding: 0;
+        }
+    }
+
+    .container-seccion {
+        .contenedor-info {
+            flex-direction: column;
+
+            .contacto-final {
+                min-width: 250px;
+                justify-content: flex-start;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    /*CHECKOUT */
+    .seccion-datos{
+        flex-wrap: wrap;
+        .contenedor-detalle{
+            width: 100%;
+        }
+    }
+}
+
+
+/* 
+    MediaQuery Tablet -> 768 a 991.
+ */
+@media screen and (min-width: 767px) and (max-width:992px) {
+    .contact-page {
+        .seccion-contact-informacion{
+                .informacion-formulario{
+                        width: 80%;
+                }
+                .contacto{
+                        width: 80%!important;
+                }
+        }
+        .container-seccion {
+            .contenedor-info {
+                width: 80%;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+
+                .contacto-final {
+                    margin-bottom: 2rem;
+                    width: 50%;
+                    justify-content: flex-start;
+                }
+            }
         }
     }
 }
